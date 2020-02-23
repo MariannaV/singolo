@@ -583,3 +583,55 @@ img {
 }
 
 /************* HEADER: END *************/
+
+/************* SLIDER: START *************/
+.slider {
+    position: relative;
+}
+
+.slider .slide-item {
+    display: grid;
+    grid-template-columns: repeat(12, 58px);
+    grid-gap: 20px;
+    align-items: center;
+    padding: 53px calc((100% - var(--containerWidth)) / 2 + 35px) 64px calc((100% - var(--containerWidth)) / 2 + 35px);
+}
+
+.slider .slide-item.phones {
+    background: linear-gradient(180deg, var(--colorRed) calc(100% - 6px), #ea676b 6px);
+}
+
+.slider .slide-item.phones .vertical-phone {
+    grid-column: 2 / 6;
+}
+
+.slider .slide-item.phones .horizontal-phone {
+    grid-column: 6 / 13;
+}
+
+.slider .slider-navigation {
+    position: absolute;
+    top: 49%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 calc((100% - var(--containerWidth)) / 2 + 42px);
+    transform: translateY(-50%);
+}
+
+.slider .slider-navigation .arrow-left,
+.slider .slider-navigation .arrow-right {
+    width: 16px;
+    height: 27px;
+    background-image: url("assets/images/slider-arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.slider .slider-navigation .arrow-right {
+    transform: rotate(180deg);
+}
+
+/************* SLIDER: END *************/
