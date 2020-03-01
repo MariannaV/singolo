@@ -587,3 +587,71 @@ img {
 
 /************* PORTFOLIO: END *************/
 
+
+/************* ABOUT: START *************/
+.content-section.about {
+    --colorText: var(--colorGray);
+    --colorBackgroundFrom: var(--colorGrayThin);
+    --colorBackgroundTo: var(--colorWhite);
+}
+
+
+.content-section.about > .description + .about-grid {
+    margin-top: 45px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 28px;
+}
+
+.block-with-person > img + * {
+    margin-top: 16px;
+}
+
+.block-with-person .person-name {
+    font-weight: var(--fontBlack);
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.block-with-person .person-name + p {
+    margin-top: 10px;
+}
+
+.block-with-person .person-description {
+    font-size: 11.8px;
+    line-height: 1.7;
+}
+
+.block-with-person .person-description  + .block-with-socials {
+    margin-top: 25px;
+}
+
+.block-with-socials > .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: filter 0.3s;
+}
+
+.block-with-socials > .icon:hover {
+    filter: brightness(0.5);
+}
+
+.block-with-socials > .icon + .icon {
+    margin-left: 4px;
+}
+
+/************* ABOUT: END *************/
