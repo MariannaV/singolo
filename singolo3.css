@@ -567,6 +567,9 @@ img {
     padding-top: 60px;
     padding-bottom: 74px;
 }
+.form-section > .description{
+    text-align: justify;
+}
 .form-section > .title,
 .form-section > .description{
     grid-column: 1 / -1;
@@ -607,6 +610,7 @@ img {
 }
 .contact-information-block > .description{
     line-height: 1.8;
+    text-align: justify;
 }
 .contact-information-block > .description,
 .contact-information-block .contacts-block{
@@ -666,4 +670,5 @@ img {
 .block-with-socials > .icon + .icon {
     margin-left: 2px;
 }
+
 /************* FOOTER: END *************/
