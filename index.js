@@ -87,8 +87,19 @@ function handleNavigationButtons(button, {isNextButton, isPrevButton} = {}) {
 
         slidesContainer.scrollLeft = (slidesWidth + slidesGap) * currentSlideIndex;
     }
-    
+
     sliders[slider.id].currentSlideIndex = currentSlideIndex;
 }
 
 /********SLIDER: END********/
+
+
+
+/********PHONE SCREENS: START********/
+
+
+function addClasses(el) {
+    el.nextElementSibling.classList.toggle('active');
+}
+
+/********PHONE SCREENS: END********/
