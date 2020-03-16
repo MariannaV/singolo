@@ -999,10 +999,6 @@ img {
     transition: filter 0.3s;
 }
 
-.block-with-socials > .icon:hover {
-    filter: brightness(0.5);
-}
-
 .block-with-socials > .icon + .icon {
     margin-left: 4px;
 }
@@ -1054,9 +1050,13 @@ img {
     padding: 12px;
     color: var(--colorPink);
     background-color: var(--colorRedMedium);
-    border: initial;
+    border: 1px solid var(--colorRedMedium);
     border-radius: 3px;
     cursor: pointer;
+    outline: initial;
+}
+.form > button:hover{
+   background-color: var(--colorRed);
 }
 
 .input, .textarea {
