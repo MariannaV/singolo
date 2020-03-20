@@ -109,14 +109,15 @@ function addClasses(el) {
 let dialog = document.querySelector('.for-quote');
 let subject = document.querySelector('.for-quote > .subject');
 let description =  document.querySelector('.for-quote > .description');
+const form = document.querySelector('.form');
 const inputSubject = document.getElementById('subject');
 const inputDescription = document.getElementById('description');
 
 function onSubmit(event) {
     event.preventDefault();
-    console.dir(subject);
     subject.textContent = inputSubject.value ?  `Subject: ${inputSubject.value}` :  `Without subject`;
     description.textContent =  inputDescription.value ? `Description: ${inputDescription.value}` : `Without description`;
+    form.reset();
     dialog.showModal();
 }
 
